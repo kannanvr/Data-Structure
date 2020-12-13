@@ -1,0 +1,128 @@
+Aj's guide for algorithms and data structures
+
+Massive 90+ tutorials for beginners to advanced. This will help you in competitive problem solving and also in programming interviews. All the solutions are provided in C or C++. You can welcome to post the solutions in other languages.
+
+This is the result for my past 6 months of hard work and sleepless nights that I have put into. I am now creating phase-2, which inludes even more complex algorithms. I shall complete them in coming months.
+
+
+
+Chapter 1: Introduction to algorithm and their types
+Chapter 2: Performance analysis of an algorithm: Space Complexity
+Chapter 3: Performance analysis of an algorithm: Time Complexity
+Chapter 4: Asymptotic Notations
+Chapter 5: Asymptotic Notation Big O <take example of all the notations involved and solve them>
+Chapter 6: Asymptotic Notation Big Omega and Theta
+
+Sorting Algorithm 1: Bubble sort
+Sorting Algorithm 2: Selection Sort
+Sorting Algorithm 3: Insertion Sort
+Sorting Algorithm 4: Merge Sort
+Sorting Algorithm 5: Quick Sort
+Sorting Algorithm 6: Pigeonhole Sort
+Sorting Algorithm 7: 3-Way Quicksort (Dutch National Flag) algorithm
+Sorting Algorithm 8: Cocktail Sort
+Sorting Algorithm 9: Radix Sort
+Sorting Algorithm 10: Bucket Sort
+Sorting Algorithm 11: Counting Sort
+Sorting Algorithm 12: Shell Sort
+Sorting Algorithm 13: Topological sort
+Sorting Algorithm 14: Heap sort
+
+Searching Algorithm 1: Linear Search
+Searching Algorithm 2: Binary Search
+Searching Algorithm 3: Jump Search 
+Searching Algorithm 4: Interpolation Search
+Searching Algorithm 5: Exponentail Search 
+Searching Algorithm 6: Ternary Search 
+
+Data structure tutorial 1: Stack Data structure and Implementation using arrays.
+Data structure tutorial 2: Stack Data structure and Implementation using Linked List.
+Data structure tutorial 3: Singly Linked List with Implementation.
+Data structure tutorial 4: Doubly Linked List [DLL] with implementation .
+Data structure tutorial 5: Circular Singly Linked List with implementation.
+Data structure tutorial 6: Circular Doubly Linked List with Implementation.
+Data structure tutorial 7: Queue Data Structure with implementation using arrays.
+Data structure tutorial 8: Queue Data Structure with implementation using linked list.
+Data structure tutorial 9: Circular Queues Data structure with Implementation using arrays.
+Data structure tutorial 10: Circular Queue Data structure with Implementation using Linked List.
+
+Trees
+Tree data structure tutorial 1. Tree DataStructure Introduction
+Tree data structure tutorial 2. Introduction to Binary Tree 
+Tree data structure tutorial 3. Binary Tree Traversal
+Tree data structure tutorial 4. Binary Search Tree Introduction 
+Tree data structure tutorial 5. Implementation of BST
+Tree data structure tutorial 6. Implementation of Binary tree 
+Tree data structure tutorial 7. TRIE Data structure
+Tree data structure tutorial 8. Heaps 
+Tree data structure tutorial 9. Priority Queue
+Tree data structure tutorial 10. AVL tree
+Tree data structure tutorial 11. segment trees
+Tree data structure tutorial 12. Implementation of segment trees
+Tree data structure tutorial 13. Lazy propagation of segment trees
+Tree data structure tutorial 14. Implementation of Lazy propagation of segment trees
+Tree data structure tutorial 15. Fenwick trees
+Tree data structure tutorial 16. Implementation of fenwick trees
+
+Graph: 
+Graph data structure tutorial 1. Graph Introduction
+Graph data structure tutorial 2. Graph Representation Adjacency Matrix 
+Graph data structure tutorial 3. Graph Representation Adjacency List 
+Graph data structure tutorial 4. Graph Traversal  
+Graph data structure tutorial 5. Graph Traversal using Stack and Queue
+Graph data structure tutorial 6. Code for Graph Traversal 
+Graph data structure tutorial 7. Bipartite graph
+Graph data structure tutorial 8. Graph colouring problem 
+Graph data structure tutorial 9. Check if the graph is Bipartite graph or not using graph colouring
+Graph data structure tutorial 10. Isomorphic Graph  
+Graph data structure tutorial 11. Euler Graph 
+Graph data structure tutorial 12. Hamiltonian Graph 
+
+
+Different types of problem solving technique 
+1. Brute force approach
+2. Recursion 
+3. Dynamic programming approach 
+4. Backtracking approach 
+5. Ball in a maze problem solution using backtracking 
+5. Greedy approach approach 
+6. Two pointer approach 
+
+Minimum Spanning Tree: 
+Mnimum Spanning Tree tutorial 1. Introduction to minimum spanning tree
+Mnimum Spanning Tree tutorial 2. Kruskals algorithm 
+Mnimum Spanning Tree tutorial 3. Prims Algorithm 
+
+Shortest Path algorithms:
+Finding shortest path algorithm tutorial 1. Bellman ford 
+Finding shortest path algorithm tutorial 2. Dijkstras 
+Finding shortest path algorithm tutorial 3. Floyd warshalls 
+
+String matching algorithms
+String matching algorithms tutorial 1. Knuth Morris Pratt String matching algorithm 
+String matching algorithms tutorial 2. Rabin Karp algorithm 
+String matching algorithms tutorial 3. Boyer–Moore string-search algorithm 
+
+
+Knapsack Problem:
+1. Fractional knapsack
+2. Knapsack 
+
+
+Additional Algorithms:
+
+1. P, NP, NP hard, NP Complete 
+2. Tower of hanoi 
+3. Sieve of Eratosthenes 
+4. Kadane Algorithm
+5. Sliding Window Approach
+6. Travelling Salesman problem 
+7. Coin Change Problem 
+8. Coin Change Problem - Total Number of denomination available. 
+9. Job Sequencing problem 
+10. Activity Selection Problem
+11. House Robber Problem 
+12. Egg dropping problem
+
+
+
