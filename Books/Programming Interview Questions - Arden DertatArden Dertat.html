@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Programming Interview Questions - Arden DertatArden Dertat</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://www.ardendertat.com/wp-content/themes/twentyten/style.css" />
+<link rel="pingback" href="http://www.ardendertat.com/xmlrpc.php" />
+<style type='text/css'>
+          .no-break br {
+            display: none !important;
+          }
+      </style>
+<!-- This site is optimized with the Yoast SEO plugin v3.0.7 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://www.ardendertat.com/2012/01/09/programming-interview-questions/" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Arden Dertat &raquo; Feed" href="http://www.ardendertat.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Arden Dertat &raquo; Comments Feed" href="http://www.ardendertat.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Arden Dertat &raquo; Programming Interview Questions Comments Feed" href="http://www.ardendertat.com/2012/01/09/programming-interview-questions/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.ardendertat.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.17"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='gdsr_style_main-css'  href='http://www.ardendertat.com/wp-content/plugins/gd-star-rating/css/gdsr.css.php?t=1367223464&#038;s=a10i10m20k20c05r05%23121620243046%23121620243240%23s1pchristmas%23s1pcrystal%23s1pdarkness%23s1poxygen%23s1goxygen_gif%23s1pplain%23s1ppumpkin%23s1psoft%23s1pstarrating%23s1pstarscape%23t1pclassical%23t1pstarrating%23t1gstarrating_gif%23lsgflower&#038;o=off&#038;ver=1.9.22' type='text/css' media='all' />
+<link rel='stylesheet' id='gdsr_style_xtra-css'  href='http://www.ardendertat.com/wp-content/gd-star-rating/css/rating.css?ver=1.9.22' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-syntax-css-css'  href='http://www.ardendertat.com/wp-content/plugins/wp-syntax/css/wp-syntax.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://www.ardendertat.com/wp-content/plugins/jetpack/css/jetpack.css?ver=3.9.7' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-10430441-2', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('send','pageview');
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type='text/javascript' src='http://www.ardendertat.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://www.ardendertat.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.ardendertat.com/wp-content/plugins/gd-star-rating/js/gdsr.js?ver=1.9.22'></script>
+<link rel='https://api.w.org/' href='http://www.ardendertat.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.ardendertat.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.ardendertat.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.4.17" />
+<link rel='shortlink' href='http://wp.me/p1tP5k-gU' />
+<link rel="alternate" type="application/json+oembed" href="http://www.ardendertat.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.ardendertat.com%2F2012%2F01%2F09%2Fprogramming-interview-questions%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.ardendertat.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.ardendertat.com%2F2012%2F01%2F09%2Fprogramming-interview-questions%2F&#038;format=xml" />
+<script type="text/javascript">
+//<![CDATA[
+var gdsr_cnst_nonce = "bd7fcd88e5";
+var gdsr_cnst_ajax = "http://www.ardendertat.com/wp-content/plugins/gd-star-rating/ajax.php";
+var gdsr_cnst_button = 1;
+var gdsr_cnst_cache = 0;
+// ]]>
+</script>
+<!--[if IE]><style type="text/css">.ratemulti .starsbar .gdcurrent { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70); }</style><![endif]-->
+<script charset="utf-8" type="text/javascript">var switchTo5x=true;</script><script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'wp.a200b22b-e43a-449a-886f-105569a60a94'});var st_type='wordpress3.1';</script><style type="text/css" media="all">
+/* <![CDATA[ */
+@import url("http://www.ardendertat.com/wp-content/plugins/wp-table-reloaded/css/plugin.css?ver=1.9.4");
+@import url("http://www.ardendertat.com/wp-content/plugins/wp-table-reloaded/css/datatables.css?ver=1.9.4");
+/* ]]> */
+</style>
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Programming Interview Questions" />
+<meta property="og:url" content="http://www.ardendertat.com/2012/01/09/programming-interview-questions/" />
+<meta property="og:description" content="The complete list of all my programming interview question articles with pointers to original posts. There are 28 questions in total, and since 28 is a perfect number (as Donald Knuth also mentione…" />
+<meta property="article:published_time" content="2012-01-09T20:23:39+00:00" />
+<meta property="article:modified_time" content="2012-06-17T03:53:17+00:00" />
+<meta property="og:site_name" content="Arden Dertat" />
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary" />
+</head>
+
+<body class="single single-post postid-1048 single-format-standard">
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="http://www.ardendertat.com/" title="Arden Dertat" rel="home">Arden Dertat</a>
+					</span>
+				</div>
+				<div id="site-description">Information Retrieval and Machine Learning</div>
+
+										<img src="http://www.ardendertat.com/wp-content/uploads/2012/06/Golden_Horn_Panorama_Istanbul.jpg" width="940" height="198" alt="" />
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu-header"><ul id="menu-menu" class="menu"><li id="menu-item-337" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-337"><a href="http://www.ardendertat.com/">Home</a></li>
+<li id="menu-item-1051" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-1051"><a title="Programming Interview Questions" href="http://www.ardendertat.com/2012/01/09/programming-interview-questions/">Interview Questions</a></li>
+<li id="menu-item-1071" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1071"><a href="http://www.ardendertat.com/2012/01/11/implementing-search-engines/">Search Engines</a></li>
+<li id="menu-item-336" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-336"><a href="http://www.ardendertat.com/2012/06/16/about-me-2/">About me</a></li>
+<li id="menu-item-376" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-376"><a href="http://ardendertat.com/resume.pdf" onclick="__gaTracker('send', 'event', 'download', 'http://ardendertat.com/resume.pdf');">Résumé / CV</a></li>
+</ul></div>			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+			
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="http://www.ardendertat.com/2012/01/06/programming-interview-questions-25-remove-duplicate-characters-in-string/" rel="prev"><span class="meta-nav">&larr;</span> Programming Interview Questions 25: Remove Duplicate Characters in String</a></div>
+					<div class="nav-next"><a href="http://www.ardendertat.com/2012/01/11/implementing-search-engines/" rel="next">Implementing Search Engines <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-1048" class="post-1048 post type-post status-publish format-standard hentry category-programming-interview">
+					<h1 class="entry-title">Programming Interview Questions</h1>
+
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://www.ardendertat.com/2012/01/09/programming-interview-questions/" title="3:23 pm" rel="bookmark"><span class="entry-date">January 9, 2012</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://www.ardendertat.com/author/admin/" title="View all posts by Arden">Arden</a></span>					</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<p style="text-align: justify;">The complete list of all my programming interview question articles with pointers to original posts. There are 28 questions in total, and since 28 is a <a href="http://en.wikipedia.org/wiki/Perfect_number" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://en.wikipedia.org/wiki/Perfect_number', 'perfect number');">perfect number</a> (as Donald Knuth also <a href="http://www-cs-faculty.stanford.edu/~uno/retd.html" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www-cs-faculty.stanford.edu/~uno/retd.html', 'mentioned');">mentioned</a>) I decided that&#8217;s a good place to stop.</p>
+<p><span id="more-1048"></span></p>
+<p style="text-align: justify;">1. <a title="Programming Interview Questions 1: Array Pair Sum" href="http://www.ardendertat.com/2011/09/17/programming-interview-questions-1-array-pair-sum/">Array Pair Sum</a><br />
+Given an integer array, output all pairs that sum up to a specific value k.</p>
+<p style="text-align: justify;">2. <a title="Programming Interview Questions 2: Matrix Region Sum" href="http://www.ardendertat.com/2011/09/20/programming-interview-questions-2-matrix-region-sum/">Matrix Region Sum</a><br />
+Given a matrix of integers and coordinates of a rectangular region within the matrix, find the sum of numbers falling inside the rectangle. Our program will be called multiple times with different rectangular regions from the same matrix.</p>
+<p style="text-align: justify;">3. <a title="Programming Interview Questions 3: Largest Continuous Sum" href="http://www.ardendertat.com/2011/09/24/programming-interview-questions-3-largest-continuous-sum/">Largest Continuous Sum</a><br />
+Given an array of integers (positive and negative) find the largest continuous sum.</p>
+<p style="text-align: justify;">4. <a title="Programming Interview Questions 4: Find Missing Element" href="http://www.ardendertat.com/2011/09/27/programming-interview-questions-4-find-missing-element/">Find Missing Element</a><br />
+There is an array of non-negative integers. A second array is formed by shuffling the elements of the first array and deleting a random element. Given these two arrays, find which element is missing in the second array.</p>
+<p style="text-align: justify;">5. <a title="Programming Interview Questions 5: Linked List Remove Nodes" href="http://www.ardendertat.com/2011/09/29/programming-interview-questions-5-linkedlist-remove-nodes/">Linked List Remove Nodes</a><br />
+Given a linkedlist of integers and an integer value, delete every node of the linkedlist containing that value.</p>
+<p style="text-align: justify;">6. <a title="Programming Interview Questions 6: Combine Two Strings" href="http://www.ardendertat.com/2011/10/10/programming-interview-questions-6-combine-two-strings/">Combine Two Strings</a><br />
+We are given 3 strings: str1, str2, and str3. Str3 is said to be a shuffle of str1 and str2 if it can be formed by interleaving the characters of str1 and str2 in a way that maintains the left to right ordering of the characters from each string. For example, given str1=”abc” and str2=”def”, str3=”dabecf” is a valid shuffle since it preserves the character ordering of the two strings. So, given these 3 strings write a function that detects whether str3 is a valid shuffle of str1 and str2.</p>
+<p style="text-align: justify;">7. <a title="Programming Interview Questions 7: Binary Search Tree Check" href="http://www.ardendertat.com/2011/10/10/programming-interview-questions-7-binary-search-tree-check/">Binary Search Tree Check</a><br />
+Given a binary tree, check whether it’s a binary search tree or not.</p>
+<p style="text-align: justify;">8. <a title="Programming Interview Questions 8: Transform Word" href="http://www.ardendertat.com/2011/10/17/programming-interview-questions-8-transform-word/">Transform Word</a><br />
+Given a source word, target word and an English dictionary, transform the source word to target by changing/adding/removing 1 character at a time, while all intermediate words being valid English words. Return the transformation chain which has the smallest number of intermediate words.</p>
+<p style="text-align: justify;">9. <a title="Programming Interview Questions 9: Convert Array" href="http://www.ardendertat.com/2011/10/18/programming-interview-questions-9-convert-array/">Convert Array</a><br />
+Given an array [a1, a2, &#8230;, aN, b1, b2, &#8230;, bN, c1, c2, &#8230;, cN]  convert it to [a1, b1, c1, a2, b2, c2, &#8230;, aN, bN, cN] in-place using constant extra space</p>
+<p style="text-align: justify;">10. <a title="Programming Interview Questions 10: Kth Largest Element in Array" href="http://www.ardendertat.com/2011/10/27/programming-interview-questions-10-kth-largest-element-in-array/">Kth Largest Element in Array</a><br />
+Given an array of integers find the kth element in the sorted order (not the kth distinct element). So, if the array is [3, 1, 2, 1, 4] and k is 3 then the result is 2, because it’s the 3rd element in sorted order (but the 3rd distinct element is 3).</p>
+<p style="text-align: justify;">11. <a title="Programming Interview Questions 11: All Permutations of String" href="http://www.ardendertat.com/2011/10/28/programming-interview-questions-11-all-permutations-of-string/">All Permutations of String</a><br />
+Generate all permutations of a given string.</p>
+<p style="text-align: justify;">12. <a title="Programming Interview Questions 12: Reverse Words in a String" href="http://www.ardendertat.com/2011/10/31/programming-interview-questions-12-reverse-words-in-a-string/">Reverse Words in a String</a><br />
+Given an input string, reverse all the words. To clarify, input: “Interviews are awesome!” output: “awesome! are Interviews”. Consider all consecutive non-whitespace characters as individual words. If there are multiple spaces between words reduce them to a single white space. Also remove all leading and trailing whitespaces. So, the output for ”   CS degree”, “CS    degree”, “CS degree   “, or ”   CS   degree   ” are all the same: “degree CS”.</p>
+<p style="text-align: justify;">13. <a title="Programming Interview Questions 13: Median of Integer Stream" href="http://www.ardendertat.com/2011/11/03/programming-interview-questions-13-median-of-integer-stream/">Median of Integer Stream</a><br />
+Given a stream of unsorted integers, find the median element in sorted order at any given time. So, we will be receiving a continuous stream of numbers in some random order and we don’t know the stream length in advance. Write a function that finds the median of the already received numbers efficiently at any time. We will be asked to find the median multiple times. Just to recall, median is the middle element in an odd length sorted array, and in the even case it’s the average of the middle elements.</p>
+<p style="text-align: justify;">14. <a title="Programming Interview Questions 14: Check Balanced Parentheses" href="http://www.ardendertat.com/2011/11/08/programming-interview-questions-14-check-balanced-parentheses/">Check Balanced Parentheses</a><br />
+Given a string of opening and closing parentheses, check whether it’s balanced. We have 3 types of parentheses: round brackets: (), square brackets: [], and curly brackets: {}. Assume that the string doesn’t contain any other character than these, no spaces words or numbers. Just to remind, balanced parentheses require every opening parenthesis to be closed in the reverse order opened. For example ‘([])’ is balanced but ‘([)]‘ is not.</p>
+<p style="text-align: justify;"> 15. <a title="Programming Interview Questions 15: First Non Repeated Character in String" href="http://www.ardendertat.com/2011/11/14/programming-interview-questions-15-first-non-repeated-character-in-string/">First Non Repeated Character in String</a><br />
+Find the first non-repeated (unique) character in a given string.</p>
+<p style="text-align: justify;">16. <a title="Programming Interview Questions 16: Anagram Strings" href="http://www.ardendertat.com/2011/11/17/programming-interview-questions-16-anagram-strings/">Anagram Strings</a><br />
+Given two strings, check if they’re anagrams or not. Two strings are anagrams if they are written using the same exact letters, ignoring space, punctuation and capitalization. Each letter should have the same count in both strings. For example, ‘Eleven plus two’ and ‘Twelve plus one’ are meaningful anagrams of each other.</p>
+<p style="text-align: justify;">17. <a title="Programming Interview Questions 17: Search Unknown Length Array" href="http://www.ardendertat.com/2011/11/21/programming-interview-questions-17-search-unknown-length-array/">Search Unknown Length Array</a><br />
+Given a sorted array of unknown length and a number to search for, return the index of the number in the array. Accessing an element out of bounds throws exception. If the number occurs multiple times, return the index of any occurrence. If it isn’t present, return -1.</p>
+<p style="text-align: justify;">18. <a title="Programming Interview Questions 18: Find Even Occurring Element" href="http://www.ardendertat.com/2011/11/29/programming-interview-questions-18-find-even-occurring-element/">Find Even Occurring Element</a><br />
+Given an integer array, one element occurs even number of times and all others have odd occurrences. Find the element with even occurrences.</p>
+<p style="text-align: justify;">19. <a title="Programming Interview Questions 19: Find Next Palindrome Number" href="http://www.ardendertat.com/2011/12/01/programming-interview-questions-19-find-next-palindrome-number/">Find Next Palindrome Number</a><br />
+Given a number, find the next smallest palindrome larger than the number. For example if the number is 125, next smallest palindrome is 131.</p>
+<p style="text-align: justify;">20. <a title="Programming Interview Questions 20: Tree Level Order Print" href="http://www.ardendertat.com/2011/12/05/programming-interview-questions-20-tree-level-order-print/">Tree Level Order Print</a><br />
+Given a binary tree of integers, print it in level order. The output will contain space between the numbers in the same level, and new line between different levels.</p>
+<p style="text-align: justify;">21. <a title="Programming Interview Questions 21: Tree Reverse Level Order Print" href="http://www.ardendertat.com/2011/12/08/programming-interview-questions-21-tree-reverse-level-order-print/">Tree Reverse Level Order Print</a><br />
+This is very similar to the previous post <a href="http://www.ardendertat.com/2011/12/05/programming-interview-questions-20-tree-level-order-print/">level order print</a>. We again print the tree in level order, but now starting from bottom level to the root.</p>
+<p style="text-align: justify;">22. <a title="Programming Interview Questions 22: Find Odd Occurring Element" href="http://www.ardendertat.com/2011/12/13/programming-interview-questions-22-find-odd-occurring-element/">Find Odd Occurring Element</a><br />
+Given an integer array, one element occurs odd number of times and all others have even occurrences. Find the element with odd occurrences.</p>
+<p style="text-align: justify;">23. <a title="Programming Interview Questions 23: Find Word Positions in Text" href="http://www.ardendertat.com/2011/12/20/programming-interview-questions-23-find-word-positions-in-text/">Find Word Positions in Text</a><br />
+Given a text file and a word, find the positions that the word occurs in the file. We’ll be asked to find the positions of many words in the same file.</p>
+<p style="text-align: justify;">24. <a title="Programming Interview Questions 24: Find Next Higher Number With Same Digits" href="http://www.ardendertat.com/2012/01/02/programming-interview-questions-24-find-next-higher-number-with-same-digits/">Find Next Higher Number With Same Digits</a><br />
+Given a number, find the next higher number using only the digits in the given number. For example if the given number is 1234, next higher number with same digits is 1243.</p>
+<p style="text-align: justify;">25. <a title="Programming Interview Questions 25: Remove Duplicate Characters in String" href="http://www.ardendertat.com/2012/01/06/programming-interview-questions-25-remove-duplicate-characters-in-string/">Remove Duplicate Characters in String</a><br />
+Remove duplicate characters in a given string keeping only the first occurrences. For example, if the input is ‘tree traversal’ the output will be ‘tre avsl’.</p>
+<p style="text-align: justify;">26. <a title="Programming Interview Questions 26: Trim Binary Search Tree" href="http://www.ardendertat.com/2012/01/17/programming-interview-questions-26-trim-binary-search-tree/">Trim Binary Search Tree</a><br />
+Given the root of a binary search tree and 2 numbers min and max, trim the tree such that all the numbers in the new tree are between min and max (inclusive). The resulting tree should still be a valid binary search tree.</p>
+<p style="text-align: justify;">27. <a title="Programming Interview Questions 27: Squareroot of a Number" href="http://www.ardendertat.com/2012/01/26/programming-interview-questions-27-squareroot-of-a-number/">Squareroot of a Number</a><br />
+Find the squareroot of a given number rounded down to the nearest integer, without using the sqrt function. For example, squareroot of a number between [9, 15] should return 3, and [16, 24] should be 4.</p>
+<p style="text-align: justify;">28. <a title="Programming Interview Questions 28: Longest Compound Word" href="http://www.ardendertat.com/2012/06/15/programming-interview-questions-28-longest-compound-word/">Longest Compound Word</a><br />
+Given a sorted list of words, find the longest compound word in the list that is constructed by concatenating the words in the list. For example, if the input list is: [&#8216;cat&#8217;, &#8216;cats&#8217;, &#8216;catsdogcats&#8217;, &#8216;catxdogcatsrat&#8217;, &#8216;dog&#8217;, &#8216;dogcatsdog&#8217;, &#8216;hippopotamuses&#8217;, &#8216;rat&#8217;, &#8216;ratcat&#8217;, &#8216;ratcatdog&#8217;, &#8216;ratcatdogcat&#8217;]. Then the longest compound word is &#8216;ratcatdogcat&#8217; with 12 letters. Note that the longest individual words are &#8216;catxdogcatsrat&#8217; and &#8216;hippopotamuses&#8217; with 14 letters, but they&#8217;re not fully constructed by other words. Former one has an extra &#8216;x&#8217; letter, and latter is an individual word by itself not a compound word.</p>
+<div style="display: none">VN:F [1.9.22_1171]</div><div class="ratingblock "><div class="ratingheader "></div><div class="ratingstars "><div id="article_rater_1048" class="ratepost gdsr-crystal gdsr-size-24"><div class="starsbar gdsr-size-24"><div class="gdouter gdheight"><div id="gdr_vote_a1048" style="width: 214.58823529412px;" class="gdinner gdheight"></div><div id="gdr_stars_a1048" class="gdsr_rating_as"><a id="gdsrX1048X10X0XaXarticle_rater_1048Xarticle_loader_1048X10X24" title="10 / 10" class="s10" rel="nofollow"></a><a id="gdsrX1048X9X0XaXarticle_rater_1048Xarticle_loader_1048X10X24" title="9 / 10" class="s9" rel="nofollow"></a><a id="gdsrX1048X8X0XaXarticle_rater_1048Xarticle_loader_1048X10X24" title="8 / 10" class="s8" rel="nofollow"></a><a id="gdsrX1048X7X0XaXarticle_rater_1048Xarticle_loader_1048X10X24" title="7 / 10" class="s7" rel="nofollow"></a><a id="gdsrX1048X6X0XaXarticle_rater_1048Xarticle_loader_1048X10X24" title="6 / 10" class="s6" rel="nofollow"></a><a id="gdsrX1048X5X0XaXarticle_rater_1048Xarticle_loader_1048X10X24" title="5 / 10" class="s5" rel="nofollow"></a><a id="gdsrX1048X4X0XaXarticle_rater_1048Xarticle_loader_1048X10X24" title="4 / 10" class="s4" rel="nofollow"></a><a id="gdsrX1048X3X0XaXarticle_rater_1048Xarticle_loader_1048X10X24" title="3 / 10" class="s3" rel="nofollow"></a><a id="gdsrX1048X2X0XaXarticle_rater_1048Xarticle_loader_1048X10X24" title="2 / 10" class="s2" rel="nofollow"></a><a id="gdsrX1048X1X0XaXarticle_rater_1048Xarticle_loader_1048X10X24" title="1 / 10" class="s1" rel="nofollow"></a></div></div></div></div><div id="article_loader_1048" style="display: none; width: 240px " class="ratingloaderarticle"><div class="loader flower " style="height: 24px"><div class="loaderinner" style="padding-top: 2px">please wait...</div></div></div></div><div class="ratingtext "><div id="gdr_text_a1048">Rating: 8.9/<strong>10</strong> (136 votes cast)</div></div></div><span class="hreview-aggregate"><span class="item"><span class="fn">Programming Interview Questions</span></span>, <span class="rating"><span class="average">8.9</span> out of <span class="best">10</span> based on <span class="votes">136</span> ratings <span class="summary"></span></span></span>											</div><!-- .entry-content -->
+
+
+					<div class="entry-utility">
+						This entry was posted in <a href="http://www.ardendertat.com/category/programming-interview/" rel="category tag">Programming Interview</a>. Bookmark the <a href="http://www.ardendertat.com/2012/01/09/programming-interview-questions/" title="Permalink to Programming Interview Questions" rel="bookmark">permalink</a>.											</div><!-- .entry-utility -->
+				</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="http://www.ardendertat.com/2012/01/06/programming-interview-questions-25-remove-duplicate-characters-in-string/" rel="prev"><span class="meta-nav">&larr;</span> Programming Interview Questions 25: Remove Duplicate Characters in String</a></div>
+					<div class="nav-next"><a href="http://www.ardendertat.com/2012/01/11/implementing-search-engines/" rel="next">Implementing Search Engines <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-below -->
+
+				
+<div id="disqus_thread">
+            <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-1341">
+        <div id="dsq-comment-header-1341" class="dsq-comment-header">
+            <cite id="dsq-cite-1341">
+                <span id="dsq-author-user-1341">EquinoX</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1341" class="dsq-comment-body">
+            <div id="dsq-comment-message-1341" class="dsq-comment-message"><p>by STOP &#8230; you mean you will stop posting only programming interview questions ?? but you can still post on game theory,network programming,ethical hacking,android programming  etc(if you have experience in those fields).I like your posts bcoz they have a constructive approach &#8230; plzz dont limit them only to the domain of interview questions.Hope you change your mind :)</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="dsq-comment-1342">
+        <div id="dsq-comment-header-1342" class="dsq-comment-header">
+            <cite id="dsq-cite-1342">
+                <span id="dsq-author-user-1342">Arden</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1342" class="dsq-comment-body">
+            <div id="dsq-comment-message-1342" class="dsq-comment-message"><p>Thanks for the encouraging comment. Yes I&#8217;ll ONLY stop posting interview questions, and continue to write about Machine Learning. My area of focus is Information Retrieval and Machine Learning, and I will start sharing more in these areas. In fact I originally started this blog about &#8216;how to implement a search engine&#8217;. You can find those articles <a href="http://www.ardendertat.com/2012/01/11/implementing-search-engines/" rel="nofollow">here</a>. Happy to hear that you enjoy my blog..</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-3" id="dsq-comment-6693">
+        <div id="dsq-comment-header-6693" class="dsq-comment-header">
+            <cite id="dsq-cite-6693">
+http://kartiksura.blogspot.in/                <span id="dsq-author-user-6693">Kartik Sura</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-6693" class="dsq-comment-body">
+            <div id="dsq-comment-message-6693" class="dsq-comment-message"><p>Your blog is one of the best blogs for interview preparation.<br />
+And your problem solving approach is awesome.<br />
+Please continue your good work.. :)</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt depth-3" id="dsq-comment-7726">
+        <div id="dsq-comment-header-7726" class="dsq-comment-header">
+            <cite id="dsq-cite-7726">
+                <span id="dsq-author-user-7726">Karl Grissom</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7726" class="dsq-comment-body">
+            <div id="dsq-comment-message-7726" class="dsq-comment-message"><p>I got to agree with Kartik, I really like this collection or problem solving questions.<br />
+If by any chance you continue to work on it then here is <a href="//testdome.com/”" rel="nofollow">a site with programming tests</a> which could potentially inspire you.<br />
+They have a set of problem solving questions, but also they provide a bug fixing questions which are very interesting.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-1347">
+        <div id="dsq-comment-header-1347" class="dsq-comment-header">
+            <cite id="dsq-cite-1347">
+                <span id="dsq-author-user-1347">EquinoX</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1347" class="dsq-comment-body">
+            <div id="dsq-comment-message-1347" class="dsq-comment-message"><p>can u suggest some books for developing complexity efficient algorithms and using data structures for solving interview problems ? coz i need some serious help for my interview preparation &#8230; thanks</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="dsq-comment-1364">
+        <div id="dsq-comment-header-1364" class="dsq-comment-header">
+            <cite id="dsq-cite-1364">
+                <span id="dsq-author-user-1364">Arden</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1364" class="dsq-comment-body">
+            <div id="dsq-comment-message-1364" class="dsq-comment-message"><p>I personally used &#8216;Cracking Coding Interviews&#8217; book extensively. It&#8217;s a great resource to prepare for programming interviews. The author also maintains a very helpful interview questions forum careercup.com, where you can find thousands of questions and answers that major tech companies such as Microsoft, Google, Apple, Amazon&#8230; ask to their candidates in real interviews.</p>
+<p>&#8216;Algorithms for Interviews&#8217; is also extremely useful. It&#8217;s somewhat more advanced, but I would definitely recommend. It contains many wonderful questions and elegant solutions.</p>
+<p>&#8216;Programming Interviews Exposed&#8217; is more basic and focuses mostly on fundamentals. It&#8217;s a good resource if you need to refresh the main concepts.</p>
+<p>&#8216;Algorithm Design Manual&#8217; is an excellent data structures and algorithms book. I used it a lot to study data structures, algorithm analysis, sorting algorithms, graphs etc. If you have limited time to study I would strongly recommend this one.</p>
+<p>These are the primary resources that come to my mind, I hope it helps. Best of luck in all your upcoming interviews..</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-3217">
+        <div id="dsq-comment-header-3217" class="dsq-comment-header">
+            <cite id="dsq-cite-3217">
+                <span id="dsq-author-user-3217">Olcay</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-3217" class="dsq-comment-body">
+            <div id="dsq-comment-message-3217" class="dsq-comment-message"><p>Hi Arden, </p>
+<p>I truly appreciate all the resources you shared. Such a great collection of study materials that are very well organized and presented. Cok tesekkurler.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="dsq-comment-3218">
+        <div id="dsq-comment-header-3218" class="dsq-comment-header">
+            <cite id="dsq-cite-3218">
+                <span id="dsq-author-user-3218">Arden</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-3218" class="dsq-comment-body">
+            <div id="dsq-comment-message-3218" class="dsq-comment-message"><p>Thanks a lot for the compliments Olcay. I&#8217;m very glad that the articles are helpful. Rica ederim..</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-4686">
+        <div id="dsq-comment-header-4686" class="dsq-comment-header">
+            <cite id="dsq-cite-4686">
+                <span id="dsq-author-user-4686">Cmon</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-4686" class="dsq-comment-body">
+            <div id="dsq-comment-message-4686" class="dsq-comment-message"><p>Hungry for more!!!<br />
+Some more questions please!!!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-6087">
+        <div id="dsq-comment-header-6087" class="dsq-comment-header">
+            <cite id="dsq-cite-6087">
+                <span id="dsq-author-user-6087">Waqas Ahmad</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-6087" class="dsq-comment-body">
+            <div id="dsq-comment-message-6087" class="dsq-comment-message"><p>Hello Arden,</p>
+<p>Could you please mention some good books on c#.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-6766">
+        <div id="dsq-comment-header-6766" class="dsq-comment-header">
+            <cite id="dsq-cite-6766">
+                <span id="dsq-author-user-6766">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-6766" class="dsq-comment-body">
+            <div id="dsq-comment-message-6766" class="dsq-comment-message"><p>You are awesome. Gr8 work :)</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-6936">
+        <div id="dsq-comment-header-6936" class="dsq-comment-header">
+            <cite id="dsq-cite-6936">
+                <span id="dsq-author-user-6936">Vijay13</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-6936" class="dsq-comment-body">
+            <div id="dsq-comment-message-6936" class="dsq-comment-message"><p>Awesome !! Awesome !! Awesome !! Awesome !! Awesome !! </p>
+<p>Some more question-answers PLEASE&#8230;&#8230;</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-7025">
+        <div id="dsq-comment-header-7025" class="dsq-comment-header">
+            <cite id="dsq-cite-7025">
+                <span id="dsq-author-user-7025">sarah</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7025" class="dsq-comment-body">
+            <div id="dsq-comment-message-7025" class="dsq-comment-message"><p>You are just AMAAAZIIIIING :)</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-7520">
+        <div id="dsq-comment-header-7520" class="dsq-comment-header">
+            <cite id="dsq-cite-7520">
+                <span id="dsq-author-user-7520">Urvashi Pathak</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7520" class="dsq-comment-body">
+            <div id="dsq-comment-message-7520" class="dsq-comment-message"><p>Write a function evenodd() to check whether a given number is odd or even. The function must return 1 if the number is even, return zero if the number is odd. Write a main function which reads the matrix of order MXN , counts the total even numbers in the matrix and also displays the total even numbers. i need to know the coding for this&#8230;</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-2" id="dsq-comment-7613">
+        <div id="dsq-comment-header-7613" class="dsq-comment-header">
+            <cite id="dsq-cite-7613">
+                <span id="dsq-author-user-7613">Ravi</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7613" class="dsq-comment-body">
+            <div id="dsq-comment-message-7613" class="dsq-comment-message"><p>Always use bit operation to find even or odd.<br />
+(number ^ 1) == 0</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-3" id="dsq-comment-7938">
+        <div id="dsq-comment-header-7938" class="dsq-comment-header">
+            <cite id="dsq-cite-7938">
+                <span id="dsq-author-user-7938">Chris B</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7938" class="dsq-comment-body">
+            <div id="dsq-comment-message-7938" class="dsq-comment-message"><p>number&amp;1</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-7526">
+        <div id="dsq-comment-header-7526" class="dsq-comment-header">
+            <cite id="dsq-cite-7526">
+                <span id="dsq-author-user-7526">nethra</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7526" class="dsq-comment-body">
+            <div id="dsq-comment-message-7526" class="dsq-comment-message"><p>longest increasing subsequence plz&#8230;..</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-7660">
+        <div id="dsq-comment-header-7660" class="dsq-comment-header">
+            <cite id="dsq-cite-7660">
+                <span id="dsq-author-user-7660">Vikram N</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7660" class="dsq-comment-body">
+            <div id="dsq-comment-message-7660" class="dsq-comment-message"><p>Have to modify the code for &#8216;Longest Common Subsequence&#8217; a bit.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-7542">
+        <div id="dsq-comment-header-7542" class="dsq-comment-header">
+            <cite id="dsq-cite-7542">
+                <span id="dsq-author-user-7542">Parad0X</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7542" class="dsq-comment-body">
+            <div id="dsq-comment-message-7542" class="dsq-comment-message"><p>This is great!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-7558">
+        <div id="dsq-comment-header-7558" class="dsq-comment-header">
+            <cite id="dsq-cite-7558">
+                <span id="dsq-author-user-7558">Ashok</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7558" class="dsq-comment-body">
+            <div id="dsq-comment-message-7558" class="dsq-comment-message"><p>How to reverse a string and when reversing it shouldn&#8217;t have duplicates</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-7563">
+        <div id="dsq-comment-header-7563" class="dsq-comment-header">
+            <cite id="dsq-cite-7563">
+                <span id="dsq-author-user-7563">Xiang</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7563" class="dsq-comment-body">
+            <div id="dsq-comment-message-7563" class="dsq-comment-message"><p>Good books for Google/Amazon Interview(onsite)  	</p>
+<p>					Apart from CLR and Skiena&#8217;s algorithms book, I would recommend the<br />
+following books focussed on real coding interviews questions which<br />
+contains great details(real questions with real answers as expected by<br />
+the google/amazon interviewer):</p>
+<p>*Top 10 coding interview problems asked in Google with solutions: Algorithmic Approach By Dr Lin Quan</p>
+<p>*Elements of Programming Interviews: 300 Questions and Solutions By Adnan et al.</p>
+<p>*Programming Pearls By Dr Bentley</p>
+<p>*More Programming Pearls By Dr Bentley</p>
+<p>These books helped me greatly in my Amazon&#8217;s onsite interview recently.</p>
+<p>Practicing topcoders questions can be an additional help if it suits individual interest.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-7626">
+        <div id="dsq-comment-header-7626" class="dsq-comment-header">
+            <cite id="dsq-cite-7626">
+                <span id="dsq-author-user-7626">geekguy</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7626" class="dsq-comment-body">
+            <div id="dsq-comment-message-7626" class="dsq-comment-message"><p>add Cracking the coding Interview ! :)</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-7612">
+        <div id="dsq-comment-header-7612" class="dsq-comment-header">
+            <cite id="dsq-cite-7612">
+                <span id="dsq-author-user-7612">dookerj</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7612" class="dsq-comment-body">
+            <div id="dsq-comment-message-7612" class="dsq-comment-message"><p>Awesome post!  Wish there were Ruby examples, though</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-7658">
+        <div id="dsq-comment-header-7658" class="dsq-comment-header">
+            <cite id="dsq-cite-7658">
+                <span id="dsq-author-user-7658">Vikram N</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7658" class="dsq-comment-body">
+            <div id="dsq-comment-message-7658" class="dsq-comment-message"><p>Arden,</p>
+<p>I am preparing for a technical interview and I am glad I found this one! This is really good collection of Q&amp;A&#8217;s. </p>
+<p>God bless you!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-7677">
+        <div id="dsq-comment-header-7677" class="dsq-comment-header">
+            <cite id="dsq-cite-7677">
+                <span id="dsq-author-user-7677">Aakash Anuj</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7677" class="dsq-comment-body">
+            <div id="dsq-comment-message-7677" class="dsq-comment-message"><p>In C++:</p>
+<p>#include </p>
+<p>using namespace std;</p>
+<p>int main() {</p>
+<p>	// your code goes here</p>
+<p>	string s;</p>
+<p>	cin&gt;&gt;s;</p>
+<p>	int array[26];</p>
+<p>	int i;</p>
+<p>	for(i=0;i&lt;26;i++)</p>
+<p>	{</p>
+<p>		array[i]=0;</p>
+<p>	}</p>
+<p>	for(i=0;i&lt;s.length();i++)</p>
+<p>	{</p>
+<p>		char c;</p>
+<p>		c=s[i];</p>
+<p>		int ascii=(int)c;</p>
+<p>		array[ascii-97]++;</p>
+<p>	}</p>
+<p>	for(i=0;i&lt;s.length();i++)</p>
+<p>	{</p>
+<p>		char c;</p>
+<p>		c=s[i];</p>
+<p>		int ascii=(int)c;</p>
+<p>		if(array[ascii-97]==1)</p>
+<p>		{</p>
+<p>			cout&lt;&lt;c&lt;&lt;endl;</p>
+<p>			break;</p>
+<p>		}</p>
+<p>	}</p>
+<p>	return 0;</p>
+<p>}</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-7719">
+        <div id="dsq-comment-header-7719" class="dsq-comment-header">
+            <cite id="dsq-cite-7719">
+                <span id="dsq-author-user-7719">Anish Rushi</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7719" class="dsq-comment-body">
+            <div id="dsq-comment-message-7719" class="dsq-comment-message"><p>Check for more IT Technical interview questions, <a href="http://skillgun.com/aptitude/questions-and-answers" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://skillgun.com/aptitude/questions-and-answers', 'aptitude questions ');" rel="nofollow">aptitude questions </a> @ <a href="http://skillgun.com" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://skillgun.com', 'http://skillgun.com');" rel="nofollow">http://skillgun.com</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-7720">
+        <div id="dsq-comment-header-7720" class="dsq-comment-header">
+            <cite id="dsq-cite-7720">
+                <span id="dsq-author-user-7720">Sreenath Reddy</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7720" class="dsq-comment-body">
+            <div id="dsq-comment-message-7720" class="dsq-comment-message"><p>check for more <a href="http://skillgun.com/java/interview-questions-and-answers" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://skillgun.com/java/interview-questions-and-answers', 'java interview questions');" rel="nofollow">java interview questions</a> @ <a href="http://skillgun.com" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://skillgun.com', 'http://skillgun.com');" rel="nofollow">http://skillgun.com</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-7747">
+        <div id="dsq-comment-header-7747" class="dsq-comment-header">
+            <cite id="dsq-cite-7747">
+                <span id="dsq-author-user-7747">zenlotus</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7747" class="dsq-comment-body">
+            <div id="dsq-comment-message-7747" class="dsq-comment-message"><p>good</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-7748">
+        <div id="dsq-comment-header-7748" class="dsq-comment-header">
+            <cite id="dsq-cite-7748">
+                <span id="dsq-author-user-7748">zenlotus</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7748" class="dsq-comment-body">
+            <div id="dsq-comment-message-7748" class="dsq-comment-message"><p>good job!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-7847">
+        <div id="dsq-comment-header-7847" class="dsq-comment-header">
+            <cite id="dsq-cite-7847">
+                <span id="dsq-author-user-7847">James</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7847" class="dsq-comment-body">
+            <div id="dsq-comment-message-7847" class="dsq-comment-message"><p>Thanks for dong this, really helped me out!<br />
+&#8211; James</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-7963">
+        <div id="dsq-comment-header-7963" class="dsq-comment-header">
+            <cite id="dsq-cite-7963">
+                <span id="dsq-author-user-7963">Selçuk İlhan Aydı</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7963" class="dsq-comment-body">
+            <div id="dsq-comment-message-7963" class="dsq-comment-message"><p>Thank you for all it. So usefull</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-8027">
+        <div id="dsq-comment-header-8027" class="dsq-comment-header">
+            <cite id="dsq-cite-8027">
+                <span id="dsq-author-user-8027">kavya tg</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8027" class="dsq-comment-body">
+            <div id="dsq-comment-message-8027" class="dsq-comment-message"><p>Hi i will share some tricky <a href="http://beyondcorner.com/top-20-java-string-interview-questions/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://beyondcorner.com/top-20-java-string-interview-questions/', 'string programs in java for interview');" rel="nofollow">string programs in java for interview</a> like<br />
+1.How to convert String to char and Vice versa?<br />
+2. How to Split String in Java?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-8036">
+        <div id="dsq-comment-header-8036" class="dsq-comment-header">
+            <cite id="dsq-cite-8036">
+                <span id="dsq-author-user-8036">Kim Blom</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8036" class="dsq-comment-body">
+            <div id="dsq-comment-message-8036" class="dsq-comment-message"><p>Where can I find most frequently asked tasks with solutions for coding Interviews?</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-8037">
+        <div id="dsq-comment-header-8037" class="dsq-comment-header">
+            <cite id="dsq-cite-8037">
+                <span id="dsq-author-user-8037">Java Expert</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8037" class="dsq-comment-body">
+            <div id="dsq-comment-message-8037" class="dsq-comment-message"><p>&#8220;Cracking the Coding Interview&#8221; by Gayle Laakmann McDowell<br />
+&#8220;TOP 30 Java Interview Coding Tasks&#8221; by Matthew Urban<br />
+&#8220;Elements of Programming Interviews in Java&#8221; by Adnan Aziz, Tsung-Hsien Lee, Amit Prakash</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-3" id="dsq-comment-8043">
+        <div id="dsq-comment-header-8043" class="dsq-comment-header">
+            <cite id="dsq-cite-8043">
+                <span id="dsq-author-user-8043">Patrick Roth</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8043" class="dsq-comment-body">
+            <div id="dsq-comment-message-8043" class="dsq-comment-message"><p>I would also recommend the &#8220;TOP 30 Java Interview Coding Tasks&#8221; because it focuses on coding tasks expected by most small IT companies.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+var disqus_url = 'http://www.ardendertat.com/2012/01/09/programming-interview-questions/';
+var disqus_identifier = '1048 http://www.ardendertat.com/?p=1048';
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = 'ardendertat';
+var disqus_title = "Programming Interview Questions";
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+    /*
+    All currently supported events:
+    onReady: fires when everything is ready,
+    onNewComment: fires when a new comment is posted,
+    onIdentify: fires when user is authenticated
+    */
+    
+    
+    this.language = '';
+        this.callbacks.onReady.push(function () {
+
+        // sync comments in the background so we don't block the page
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = '?cf_action=sync_comments&post_id=1048';
+
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(script, firstScript);
+    });
+    
+    if (disqus_config_custom) {
+        disqus_config_custom.call(this);
+    }
+};
+
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="gdlb_widget-2" class="widget-container widget_gd_linkedin_badge"><div style="text-align: left;" class="gdlb-widget-badge"><a target="_blank" href="http://www.linkedin.com/in/ardendertat"><img src="http://www.linkedin.com/img/webpromo/btn_myprofile_160x33.gif" border="0" alt="Arden Dertat" /></a></div></li><li id="text-6" class="widget-container widget_text">			<div class="textwidget"><a href="https://twitter.com/ardendertat" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://twitter.com/ardendertat', 'Follow @ardendertat');" class="twitter-follow-button" data-show-count="false">Follow @ardendertat</a>
+<script src="//platform.twitter.com/widgets.js" type="text/javascript"></script></div>
+		</li><li id="tag_cloud-3" class="widget-container widget_tag_cloud"><h3 class="widget-title">Categories</h3><div class="tagcloud"><a href='http://www.ardendertat.com/category/about/' class='tag-link-3' title='1 topic' style='font-size: 8pt;'>About</a>
+<a href='http://www.ardendertat.com/category/information-retrieval/' class='tag-link-10' title='3 topics' style='font-size: 11.529411764706pt;'>Information Retrieval</a>
+<a href='http://www.ardendertat.com/category/optimization/' class='tag-link-8' title='1 topic' style='font-size: 8pt;'>Optimization</a>
+<a href='http://www.ardendertat.com/category/programming-interview/' class='tag-link-11' title='30 topics' style='font-size: 22pt;'>Programming Interview</a>
+<a href='http://www.ardendertat.com/category/python/' class='tag-link-7' title='1 topic' style='font-size: 8pt;'>Python</a>
+<a href='http://www.ardendertat.com/category/search-engines/' class='tag-link-9' title='4 topics' style='font-size: 12.705882352941pt;'>Search Engines</a>
+<a href='http://www.ardendertat.com/category/web-search/' class='tag-link-6' title='3 topics' style='font-size: 11.529411764706pt;'>Web Search</a></div>
+</li>		<li id="recent-posts-6" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://www.ardendertat.com/2012/06/16/about-me-2/">About me..</a>
+						</li>
+					<li>
+				<a href="http://www.ardendertat.com/2012/06/15/programming-interview-questions-28-longest-compound-word/">Programming Interview Questions 28: Longest Compound Word</a>
+						</li>
+					<li>
+				<a href="http://www.ardendertat.com/2012/01/26/programming-interview-questions-27-squareroot-of-a-number/">Programming Interview Questions 27: Squareroot of a Number</a>
+						</li>
+					<li>
+				<a href="http://www.ardendertat.com/2012/01/17/programming-interview-questions-26-trim-binary-search-tree/">Programming Interview Questions 26: Trim Binary Search Tree</a>
+						</li>
+					<li>
+				<a href="http://www.ardendertat.com/2012/01/11/implementing-search-engines/">Implementing Search Engines</a>
+						</li>
+				</ul>
+		</li>		<li id="archives-4" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href='http://www.ardendertat.com/2012/06/'>June 2012</a>&nbsp;(2)</li>
+	<li><a href='http://www.ardendertat.com/2012/01/'>January 2012</a>&nbsp;(6)</li>
+	<li><a href='http://www.ardendertat.com/2011/12/'>December 2011</a>&nbsp;(5)</li>
+	<li><a href='http://www.ardendertat.com/2011/11/'>November 2011</a>&nbsp;(6)</li>
+	<li><a href='http://www.ardendertat.com/2011/10/'>October 2011</a>&nbsp;(7)</li>
+	<li><a href='http://www.ardendertat.com/2011/09/'>September 2011</a>&nbsp;(5)</li>
+	<li><a href='http://www.ardendertat.com/2011/07/'>July 2011</a>&nbsp;(1)</li>
+	<li><a href='http://www.ardendertat.com/2011/05/'>May 2011</a>&nbsp;(4)</li>
+		</ul>
+		</li><li id="search-4" class="widget-container widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://www.ardendertat.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="site-info">
+				<a href="http://www.ardendertat.com/" title="Arden Dertat" rel="home">
+					Arden Dertat				</a>
+			</div><!-- #site-info -->
+
+			<div id="site-generator">
+								<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress.</a>
+			</div><!-- #site-generator -->
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+        <script type="text/javascript">
+        // <![CDATA[
+        var disqus_shortname = 'ardendertat';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) { url = url[0]; }
+                    else { url = url[1]; }
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); 
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        // ]]>
+        </script>
+        <!-- Powered by WPtouch: 4.0.3 -->	<div style="display:none">
+	</div>
+<script type='text/javascript' src='http://www.ardendertat.com/wp-includes/js/comment-reply.min.js?ver=4.4.17'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201903'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2019Janaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.ardendertat.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.4.17'></script>
+<script type='text/javascript' src='http://www.ardendertat.com/wp-includes/js/wp-embed.min.js?ver=4.4.17'></script>
+<script type='text/javascript' src='http://stats.wp.com/e-201903.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.9.7',blog:'21884222',post:'1048',tz:'-5',srv:'www.ardendertat.com'} ]);
+	_stq.push([ 'clickTrackerInit', '21884222', '1048' ]);
+</script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+ Served from: www.ardendertat.com @ 2019-01-18 23:57:14 by W3 Total Cache -->
