@@ -1,0 +1,6 @@
+1. Functions call, most of the programming lng uses stack to execute functions calls.
+2. checking for balance parenthesis.
+3. reverse items (push into stack and then pop it).
+4. infix to prefix conversions.(compiler find difficult to execute infix operation.
+5. stock span problems.**(mostly asked in interview)
+6. undo/redo operations or forward/backward operations.

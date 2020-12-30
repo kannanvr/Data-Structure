@@ -1,0 +1,102 @@
+1. Hashing provide us search, insert and delete operations in O(1) time. better than even (AVL and RBL trees).
+2. don't use hashing if you need keys in sorted order or values from range or nearest element in those case use tree. 
+3. Hashing Applications:
+	a) Dictionaries (check work is valid or not)
+	b) Cryptography (websites uses hash to encrypt passwords) 
+	c) Cache        (browser cache stores in form uses key(url)-value) 
+	d) Symbol Tales in compilers/Interpreter
+	e) Rouer        (mac to ip conversion)
+	f) Getting data from db (assoc array)
+	g) Database Indexing (primary and secondary)
+	h) Many more
+https://en.wikipedia.org/wiki/Hash_table
+https://dave.cheney.net/2018/05/29/how-the-go-runtime-implements-maps-efficiently-without-generics
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+resource requirements:
+-------------------------velero------------------------------------
+limits:
+  cpu: "1"
+  memory: 1Gi
+total cpu = (cpu * replicas) = 1*1 = core
+total memory = (memory limits * replicas) = 512 *1=512Mi
+--------------------------restic(ds)--------------------------------
+limits:
+  cpu: "1"
+  memory: 1Gi
+total cpu = (cpu * replicas) = 1*(total number of schedulable node in cluster) = O(size of cluster)
+total memory = (memory limits * replicas) = 512 *(total number of schedulable node in cluster)= O(size of cluster)
+--------------------------tcl-backup-------------------------------
+limits:
+  cpu: "1"
+  memory: 1Gi
+total cpu = (cpu * replicas) = 1*1 = core
+total memory = (memory limits * replicas) = 512 *1=512Mi
+--------------------------tcl-restore-------------------------------
+limits:
+  cpu: "1"
+  memory: 1Gi
+total cpu = (cpu * replicas) = 1*1 = core
+
+
+--------------------------total for backup/restore/dr------------------
+total cpu=1(velero)+1(tcl-backup)+1(tcl-restore)+1*n = 3+n(core)
+total memory = 512Mi(velero)+512Mi(tcl-backup)+512Mi(tcl-restore)+1Gi*n = 1.5Gi+1*nGi
+where n= total number of schedulable node in cluster
+
+
+
+
+
+
+resource requirements:
+-------------------------velero------------------------------------
+limits:
+  cpu: "1"
+  memory: 1Gi
+total cpu = (cpu * replicas) = 1*1 = core
+total memory = (memory limits * replicas) = 1 *1=1Gi
+--------------------------restic(ds)--------------------------------
+limits:
+  cpu: "1"
+  memory: 1Gi
+total cpu = (cpu * replicas) = 1*(total number of schedulable node in cluster) = O(size of cluster)
+total memory = (memory limits * replicas) = 1 *(total number of schedulable node in cluster)= O(size of cluster)
+--------------------------tcl-backup-------------------------------
+limits:
+  cpu: "1"
+  memory: 1Gi
+total cpu = (cpu * replicas) = 1*1 = core
+total memory = (memory limits * replicas) = 1 *1=1Gi
+--------------------------tcl-restore-------------------------------
+limits:
+  cpu: "1"
+  memory: 1Gi
+total cpu = (cpu * replicas) = 1*1 = core
+total memory = (memory limits * replicas) = 1 *1=1Gi
+
+--------------------------total for backup/restore/dr------------------
+total cpu=1(velero)+1(tcl-backup)+1(tcl-restore)+1*n = 3+n(core)
+total memory = 1Gi(velero)+1Gi(tcl-backup)+1Gi(tcl-restore)+1Gi*n = 3Gi+1*nGi
+where n= total number of schedulable node in cluster
