@@ -41,8 +41,6 @@ func maxWater(arr []int, n int) int{
 //array traversal is needed which reduces the efficiency of the solution.
 //To make this efficient one must pre-compute the highest bar on the left and right of every bar in linear
 //time. Then use these pre-computed values to find the amount of water in every array.
-
-
 func findWater1(arr []int, n int) int {
 	// left[i] contains height of tallest bar to the
 	// left of i'th bar including itself

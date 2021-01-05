@@ -1,4 +1,4 @@
-package Array
+package main
 
 import (
 	"math"
@@ -67,8 +67,12 @@ func findKthLargestM1(nums []int, k int ) int  {
 //2) Print the first k numbers of the sorted array O(k).
 func findKthLargestM2(nums []int, k int ) int  {
 	// https://tip.golang.org/src/sort/sort.go?s=4433:4458#L182
+	// https://www.golangprograms.com/golang/sort-reverse-search-functions/
+	// sort.Sort(sort.Reverse(sort.IntSlice(a))) to sort in descending order
 	sort.Ints(nums)
 	return nums[len(nums)-k]
 }
+
+
 
 
