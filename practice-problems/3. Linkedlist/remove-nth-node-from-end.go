@@ -16,6 +16,7 @@ class Solution:
         while curr!=None:
             l+=1
             curr=curr.next
+
         if B>l or l-B+1==1: #remove head node
             return A.next
         if l==1:
@@ -28,8 +29,5 @@ class Solution:
             A=A.next
         prv.next=A.next
         return head
-
-
-
 
 */

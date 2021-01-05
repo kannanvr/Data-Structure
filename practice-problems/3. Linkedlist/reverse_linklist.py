@@ -16,7 +16,7 @@ def reverse_singly_linkedlist_1(head):
     if head is None or head.next is None:
         return head
     # reverse the rest list and put the first element at the end
-    node = reverse_singly_linkedlist(head.next)
+    node = reverse_singly_linkedlist_1(head.next)
     head.next.next = node
     head.next = None
     return node
